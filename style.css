@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Mochiy+Pop+One&display=swap');
+
+
+/* Pre_Defined section */
+:root{
+    --primary-textColor:#183b56;
+    --secondary-textColor:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+    --bg-color: rgb(247, 241, 233);
+}
+
+.dark-mode{
+    --primary-textColor:#f1f3f5;
+    --secondary-textColor:#53de44;
+    --accent-color:#b0afb2;
+    --accent-color-dark:#8b9f08;
+    --bg-color: rgb(18, 18, 1);
+}
+/* Reusible Section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: var(--primary-textColor);
+    word-spacing: 2px;
+    background-color: var(--bg-color);
+    transition: 0.4s ease;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.hover-link{
+    font-size: 0.9rem;
+    color: var(--primary-textColor);
+    transition: 0.3s ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+.primary-btn{
+    background-color: var(--accent-color);
+    border-radius: 0.5px 1rem;
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 2px 4px var(--secondary-textColor);
+    transition: 0.3s ease-out;
+    text-align: center;
+}
+.primary-btn:hover{
+    background-color: var(--accent-color-dark);
+    color: var(--bg-color);
+}
+.secondary-btn{
+    border: 1px solid var(--secondary-textColor);
+    border-radius: 0.5px 1rem;
+    color: var(--secondary-textColor);
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 2px 4px var(--secondary-textColor);
+    transition: 0.3s ease-out;
+}
+.secondary-btn:hover{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Top banner section */
+.small-bolt-text{
+    font-size: 0.8rem;
+}
+.banner-text{
+    color: var(--primary-textColor);
+    padding: 15px 30px;
+    text-align: center;
+}
+.top-banner{
+    background-color: var(--bg-color);
+}
+
+/* Navbar section */
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.company-logo{
+    font-size: 1.2rem;
+    color: var(--accent-color-dark);
+    cursor: default;
+}
+.company-logo i{
+    display: inline-block;
+    font-size: 2.5rem;
+}
+.nav-links ul{
+    gap: 2rem;
+}
+.nav-links ul li img{
+    width: 30px;
+    cursor: pointer;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* Header section */
+header{
+    padding: 50px var(--padding-inline-section);
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    width: 100%;
+}
+.get-start{
+    margin-top: 2rem;
+}
+.header-right img{
+    width: 45vw;
+}
+
+/* Company Section */
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+}
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo{
+    font-size: 3rem;
+}
+
+/* Features section */
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+}
+.features-header{
+    text-align: center;
+}
+.features-header h3{
+    padding: 20px 0px;
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    background-color: var(--bg-color);
+    padding: 2rem var(--padding-inline-section);
+    border-radius: .5rem 5rem;
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.features-card img{
+    max-width: 100px;
+}
+
+/* Big-feature Section */
+.bigfeature-section{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.big-feature{
+    gap: 30px;
+}
+.bigfeature-img img{
+    width: 100%;
+}
+.bigfeature-text{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Examples Section */
+.examples-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: black;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/presentation.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem 3rem;
+    transition: 0.3s ease-in-out;
+}
+.card-text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    color: white;
+    padding: 10px;
+}
+.examples-area{
+    margin-top: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.examples-card:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/language-exchange.png);
+    background-position: center;
+    background-size: cover;
+}
+.examples-card:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/protection.png);
+    background-position: center;
+    background-size: cover;
+}
+.examples-card:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/studying.png);
+    background-position: center;
+    background-size: cover;
+}
+.examples-card:hover{
+    box-shadow: 0px 3px 10px var(--bg-color);
+}
+
+/* CTA Section */
+.cta-section{
+    background-color: var(--bg-color);
+}
+.cta-header{
+    padding: 50px var(--padding-inline-section);
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: var(--primary-textColor);
+}
+
+/* Footer Section */
+footer{
+    background-color: var(--bg-color);
+}
+.footer-section{
+    padding: 20px var(--padding-inline-section);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-box{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.link-column a{
+    display: block;
+    margin: 10px;
+    color: var(--primary-textColor);
+}
+.link-column h4{
+    color: var(--accent-color-dark);
+}
+
+/* Sub-footer Section */
+.subfooter{
+    background-color: dimgray;
+}
+.subfooter-section{
+    justify-content: space-between;
+    padding: 20px var(--padding-inline-section);
+    transition: 0.3 ease-out;
+}
+.subfooter-section a{
+    color: var(--bg-color);
+}
+.subfooter-section a:hover{
+    color: var(--primary-textColor);
+}
+.subfooter-section a i{
+    font-size: 2rem;
+}
